@@ -1,0 +1,156 @@
+-- Sample Job Positions for various departments
+
+-- QA Positions
+INSERT INTO job_positions (company_id, job_role_id, title, description, requirements, responsibilities, location, employment_type, salary_range, experience_required, skills_required, qualifications, benefits) VALUES
+(1, (SELECT id FROM job_roles WHERE role_name = 'QA Engineer'), 
+ 'QA Engineer - Web Applications', 
+ 'We are seeking a skilled QA Engineer to join our quality assurance team. You will be responsible for testing web applications, creating test cases, and ensuring high-quality software delivery.',
+ 'Bachelor''s degree in Computer Science or related field. 3+ years of experience in software testing. Strong knowledge of testing methodologies and tools.',
+ 'Design and execute test cases, perform manual and automated testing, identify and report bugs, collaborate with development teams, maintain test documentation.',
+ 'San Francisco, CA',
+ 'Full-time',
+ '$80,000 - $110,000',
+ '3-5 years',
+ ARRAY['Selenium', 'TestNG', 'API Testing', 'Bug Tracking', 'Test Case Design'],
+ ARRAY['Bachelor''s degree in Computer Science', 'ISTQB certification preferred'],
+ ARRAY['Health insurance', 'Dental coverage', '401k matching', 'Flexible work hours']),
+
+(1, (SELECT id FROM job_roles WHERE role_name = 'QA Automation Engineer'), 
+ 'Senior QA Automation Engineer', 
+ 'Join our automation team to build and maintain automated testing frameworks. You will work on creating robust test automation solutions for our enterprise applications.',
+ 'Bachelor''s degree in Engineering. 5+ years of automation testing experience. Expertise in Selenium, Cypress, or similar tools.',
+ 'Develop automation frameworks, create and maintain automated test scripts, integrate tests with CI/CD pipelines, mentor junior team members.',
+ 'Remote',
+ 'Full-time',
+ '$95,000 - $130,000',
+ '5-7 years',
+ ARRAY['Selenium WebDriver', 'Cypress', 'Jenkins', 'Git', 'Java', 'Python'],
+ ARRAY['Bachelor''s degree in Engineering', '5+ years automation experience'],
+ ARRAY['Remote work', 'Health insurance', 'Stock options', 'Professional development budget']);
+
+-- HR Positions
+INSERT INTO job_positions (company_id, job_role_id, title, description, requirements, responsibilities, location, employment_type, salary_range, experience_required, skills_required, qualifications, benefits) VALUES
+(1, (SELECT id FROM job_roles WHERE role_name = 'HR Manager'), 
+ 'HR Manager - Technology Division', 
+ 'Lead our HR initiatives for the technology division. You will oversee recruitment, employee relations, and strategic HR planning for our growing tech team.',
+ 'Bachelor''s degree in HR or related field. 7+ years of HR experience with at least 3 years in management. Experience in tech industry preferred.',
+ 'Manage recruitment processes, develop HR policies, handle employee relations, oversee performance management, strategic workforce planning.',
+ 'Austin, TX',
+ 'Full-time',
+ '$90,000 - $120,000',
+ '7-10 years',
+ ARRAY['Recruitment', 'Employee Relations', 'Performance Management', 'HRIS', 'Policy Development'],
+ ARRAY['Bachelor''s degree in HR', 'PHR or SHRM certification', '7+ years HR experience'],
+ ARRAY['Health insurance', 'Dental coverage', '401k matching', 'Paid time off', 'Professional development']),
+
+(1, (SELECT id FROM job_roles WHERE role_name = 'Talent Acquisition Specialist'), 
+ 'Senior Talent Acquisition Specialist', 
+ 'Drive our talent acquisition efforts for technical roles. You will source, screen, and hire top talent for our engineering and data science teams.',
+ 'Bachelor''s degree preferred. 4+ years of technical recruiting experience. Strong understanding of technology roles and skills.',
+ 'Source candidates through various channels, conduct initial screenings, coordinate interviews, manage candidate experience, build talent pipelines.',
+ 'New York, NY',
+ 'Full-time',
+ '$70,000 - $95,000',
+ '4-6 years',
+ ARRAY['Technical Recruiting', 'Sourcing', 'Interviewing', 'ATS Systems', 'Boolean Search'],
+ ARRAY['Bachelor''s degree preferred', '4+ years recruiting experience', 'Technical recruiting experience'],
+ ARRAY['Health insurance', 'Commuter benefits', 'Flexible schedule', 'Performance bonuses']);
+
+-- Data Science Positions
+INSERT INTO job_positions (company_id, job_role_id, title, description, requirements, responsibilities, location, employment_type, salary_range, experience_required, skills_required, qualifications, benefits) VALUES
+(1, (SELECT id FROM job_roles WHERE role_name = 'Data Scientist'), 
+ 'Data Scientist - Machine Learning', 
+ 'Join our data science team to build predictive models and extract insights from large datasets. You will work on cutting-edge ML projects that drive business decisions.',
+ 'Master''s degree in Data Science, Statistics, or related field. 4+ years of experience in data science and machine learning.',
+ 'Develop machine learning models, analyze large datasets, create data visualizations, collaborate with product teams, present findings to stakeholders.',
+ 'Seattle, WA',
+ 'Full-time',
+ '$120,000 - $160,000',
+ '4-6 years',
+ ARRAY['Python', 'R', 'Machine Learning', 'SQL', 'TensorFlow', 'Pandas', 'Scikit-learn'],
+ ARRAY['Master''s degree in Data Science or related field', '4+ years ML experience'],
+ ARRAY['Health insurance', 'Stock options', 'Learning budget', 'Flexible work arrangements']),
+
+(1, (SELECT id FROM job_roles WHERE role_name = 'Data Engineer'), 
+ 'Senior Data Engineer', 
+ 'Build and maintain our data infrastructure. You will design data pipelines, optimize data workflows, and ensure reliable data delivery for analytics and ML teams.',
+ 'Bachelor''s degree in Computer Science or Engineering. 5+ years of data engineering experience. Strong programming skills in Python or Scala.',
+ 'Design and build data pipelines, optimize data processing workflows, maintain data quality, collaborate with data scientists and analysts.',
+ 'San Francisco, CA',
+ 'Full-time',
+ '$110,000 - $145,000',
+ '5-7 years',
+ ARRAY['Python', 'Spark', 'Hadoop', 'Kafka', 'SQL', 'AWS', 'ETL'],
+ ARRAY['Bachelor''s degree in Computer Science', '5+ years data engineering experience'],
+ ARRAY['Health insurance', 'Equity participation', 'Professional development', 'Flexible PTO']);
+
+-- Salesforce Positions
+INSERT INTO job_positions (company_id, job_role_id, title, description, requirements, responsibilities, location, employment_type, salary_range, experience_required, skills_required, qualifications, benefits) VALUES
+(1, (SELECT id FROM job_roles WHERE role_name = 'Salesforce Developer'), 
+ 'Salesforce Developer - Lightning Platform', 
+ 'Develop custom solutions on the Salesforce platform. You will build Lightning components, create Apex classes, and integrate Salesforce with external systems.',
+ 'Bachelor''s degree in Computer Science. 3+ years of Salesforce development experience. Platform Developer I certification required.',
+ 'Develop Lightning components, write Apex code, create Visualforce pages, integrate with external APIs, maintain Salesforce customizations.',
+ 'Chicago, IL',
+ 'Full-time',
+ '$85,000 - $115,000',
+ '3-5 years',
+ ARRAY['Apex', 'Lightning Web Components', 'Visualforce', 'SOQL', 'Salesforce APIs'],
+ ARRAY['Bachelor''s degree in Computer Science', 'Platform Developer I certification', '3+ years Salesforce experience'],
+ ARRAY['Health insurance', 'Dental coverage', 'Certification reimbursement', 'Flexible work schedule']),
+
+(1, (SELECT id FROM job_roles WHERE role_name = 'Salesforce Administrator'), 
+ 'Salesforce Administrator', 
+ 'Manage and configure our Salesforce org. You will handle user management, create reports and dashboards, and ensure optimal system performance.',
+ 'Bachelor''s degree preferred. 2+ years of Salesforce administration experience. Administrator certification required.',
+ 'Manage user accounts and permissions, create and maintain reports and dashboards, configure workflows and process builder, provide user training and support.',
+ 'Denver, CO',
+ 'Full-time',
+ '$65,000 - $85,000',
+ '2-4 years',
+ ARRAY['Salesforce Administration', 'Reports and Dashboards', 'Workflows', 'Process Builder', 'Data Management'],
+ ARRAY['Salesforce Administrator certification', '2+ years admin experience'],
+ ARRAY['Health insurance', 'Professional development', 'Certification support', 'Work from home options']);
+
+-- IT Positions
+INSERT INTO job_positions (company_id, job_role_id, title, description, requirements, responsibilities, location, employment_type, salary_range, experience_required, skills_required, qualifications, benefits) VALUES
+(1, (SELECT id FROM job_roles WHERE role_name = 'Cloud Engineer'), 
+ 'Cloud Infrastructure Engineer', 
+ 'Design and manage our cloud infrastructure on AWS. You will work on scalable, secure, and cost-effective cloud solutions for our applications.',
+ 'Bachelor''s degree in Computer Science or related field. 4+ years of cloud engineering experience. AWS certifications preferred.',
+ 'Design cloud architecture, manage AWS services, implement security best practices, optimize costs, automate infrastructure deployment.',
+ 'Remote',
+ 'Full-time',
+ '$95,000 - $125,000',
+ '4-6 years',
+ ARRAY['AWS', 'Terraform', 'Docker', 'Kubernetes', 'CloudFormation', 'Linux'],
+ ARRAY['Bachelor''s degree in Computer Science', 'AWS certifications preferred', '4+ years cloud experience'],
+ ARRAY['Remote work', 'Health insurance', 'Certification reimbursement', 'Flexible schedule']),
+
+(1, (SELECT id FROM job_roles WHERE role_name = 'Security Engineer'), 
+ 'Cybersecurity Engineer', 
+ 'Protect our systems and data from security threats. You will implement security measures, conduct security assessments, and respond to security incidents.',
+ 'Bachelor''s degree in Cybersecurity or related field. 5+ years of security engineering experience. Security certifications preferred.',
+ 'Implement security controls, conduct vulnerability assessments, monitor security events, respond to incidents, develop security policies.',
+ 'Washington, DC',
+ 'Full-time',
+ '$100,000 - $135,000',
+ '5-7 years',
+ ARRAY['Cybersecurity', 'Penetration Testing', 'SIEM', 'Vulnerability Assessment', 'Incident Response'],
+ ARRAY['Bachelor''s degree in Cybersecurity', 'CISSP or similar certification preferred', '5+ years security experience'],
+ ARRAY['Health insurance', 'Security clearance bonus', 'Professional development', 'Certification support']);
+
+-- Performance Testing Position
+INSERT INTO job_positions (company_id, job_role_id, title, description, requirements, responsibilities, location, employment_type, salary_range, experience_required, skills_required, qualifications, benefits) VALUES
+(1, (SELECT id FROM job_roles WHERE role_name = 'Performance Test Engineer'), 
+ 'Performance Test Engineer', 
+ 'Ensure our applications can handle expected load and perform optimally. You will design and execute performance tests, analyze results, and recommend improvements.',
+ 'Bachelor''s degree in Computer Science or Engineering. 4+ years of performance testing experience. Experience with JMeter or LoadRunner.',
+ 'Design performance test scenarios, execute load and stress tests, analyze performance metrics, identify bottlenecks, collaborate with development teams.',
+ 'Boston, MA',
+ 'Full-time',
+ '$85,000 - $110,000',
+ '4-6 years',
+ ARRAY['JMeter', 'LoadRunner', 'Performance Testing', 'Load Testing', 'Monitoring Tools'],
+ ARRAY['Bachelor''s degree in Computer Science', '4+ years performance testing experience'],
+ ARRAY['Health insurance', 'Dental coverage', 'Professional development', 'Flexible work arrangements']);
